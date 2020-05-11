@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>211</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string> Corona Virus 2019 Dataset</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>345</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menutesty">
+    <property name="title">
+     <string>Master</string>
+    </property>
+    <addaction name="actionCreate_Summary_chart"/>
+   </widget>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>Reports</string>
+    </property>
+    <addaction name="actionView_Charts"/>
+    <addaction name="actionCreate_Geographical_Charts"/>
+    <addaction name="actionOpen_US_Geographical_Map"/>
+    <addaction name="actionOpen_US_Geographical_Map_Death_Cases"/>
+   </widget>
+   <addaction name="menutesty"/>
+   <addaction name="menuUser"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_Summary_chart">
+   <property name="text">
+    <string>Create Summary chart</string>
+   </property>
+  </action>
+  <action name="actionCreate_Geographical_Charts">
+   <property name="text">
+    <string>Open World Geographical Map</string>
+   </property>
+  </action>
+  <action name="actionView_Charts">
+   <property name="text">
+    <string>View Charts</string>
+   </property>
+  </action>
+  <action name="actionOpen_US_Geographical_Map">
+   <property name="text">
+    <string>Open US Geographical Map Confirmed Cases</string>
+   </property>
+  </action>
+  <action name="actionOpen_US_Geographical_Map_Death_Cases">
+   <property name="text">
+    <string>Open US Geographical Map Death Cases</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Graphs/pics.qrc"/>
+ </resources>
+ <connections/>
+</ui>

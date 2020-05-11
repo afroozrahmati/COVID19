@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="pic">
+    <file>coronavirus_0.png</file>
+  </qresource>
+</RCC>
